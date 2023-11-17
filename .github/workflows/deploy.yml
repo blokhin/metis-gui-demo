@@ -20,6 +20,10 @@ jobs:
         run: |
           npm install
 
+      - name: Optimade-prefetch
+        run: |
+          node node_modules/optimade/prefetch.js
+
       - name: Build
         run: |
           npm run build
